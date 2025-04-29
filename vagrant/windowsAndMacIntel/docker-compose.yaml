@@ -31,7 +31,7 @@ services:
       image: rianbest/profile-app
       container_name: vproapp
       ports:
-        - "8000:8080"
+        - "8080:8080"
       volumes:
         - vproappdata:/usr/local/tomcat/webapps/
 
@@ -41,7 +41,7 @@ services:
         image: rianbest/profile-web
         container_name: vproweb
         ports:
-          - "80:80"
+            - "80:80"
 
 volumes:
   vprodbdata: {}
